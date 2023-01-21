@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KOPPEE - Coffee Shop HTML Template</title>
+    <title>CAPULUS - Find your favourite</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -31,7 +31,7 @@
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1>
+                <h1 class="m-0 display-4 text-uppercase text-white">CAPULUS</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -186,17 +186,22 @@
     <!-- Choose your own Start -->
     <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
         <div class="container py-5">
-            <h1 class="display-3 text-primary mt-3">Coffee Library</h1>
+            <h1 class="display-3 text-primary mt-3"><a href=menu.html>Coffee Library</a></h1>
             <h1 class="text-white mb-3">Try new brews at home!</h1>
             <h4 class="text-white font-weight-normal mb-4 pb-3">Type the name of a caffeinated beverage</h4>
             <form class="form-inline justify-content-center mb-4">
                 <div class="input-group">
-                    <input type="text" class="form-control p-4" placeholder="Type your coffee here" style="height: 60px;">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary font-weight-bold px-4" type="submit">Submit</button>
-                    </div>
-                </div>
+                    <input type="text" id="search_input" class="form-control p-4" placeholder="Type your coffee here" style="height: 60px;">
+                    <div class="input-group-append ">
+                        <button class="btn btn-primary font-weight-bold px-4 tempToggle" type="button" style="background-color: lightblue;" >Iced</button>
+                        <button class="btn btn-primary font-weight-bold px-4 generate" type="submit" >Submit</button>
+            </div>
+            </div>
             </form>
+            <div class="CoffeeName" style="color: white; font-size: 3rem; font-weight: bold;"></div>
+            <div class="CoffeeIngredients" style="color: white; font-size: 2rem "> </div>
+            <div class="CoffeeDetails" style="color: white; font-size: 1.5rem"> </div>
+            <div class="CoffeeImage" style="color: white; object-fit: contain;"> </div>
         </div>
     </div>
     <!-- Choose your own End -->
@@ -445,6 +450,7 @@
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
             <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Domain</a>. All Rights Reserved.</a></p>
             <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+            <p class="m-0 text-white">Repo at <a class="font-weight-bold" href="https://github.com/StobbsnotStubbs/Capulus">Github</a></p>
         </div>
     </div>
     <!-- Footer End -->
