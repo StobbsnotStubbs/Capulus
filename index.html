@@ -188,18 +188,21 @@
         <div class="container py-5">
             <h1 class="display-3 text-primary mt-3"><a href=menu.html>Coffee Library</a></h1>
             <h1 class="text-white mb-3">Try new brews at home!</h1>
-            <h4 class="text-white font-weight-normal mb-4 pb-3">Type the name of a caffeinated beverage</h4>
+            <h4 class="text-white font-weight-normal mb-4 pb-3">Type the name of a caffeinated beverage (case sensitive)</h4>
             <form class="form-inline justify-content-center mb-4">
                 <div class="input-group">
                     <input type="text" id="search_input" class="form-control p-4" placeholder="Type your coffee here" style="height: 60px;">
                     <div class="input-group-append ">
+                        <button class="btn btn-primary font-weight-bold px-4 coffeeLister" type="button"  >List</button>
                         <button class="btn btn-primary font-weight-bold px-4 tempToggle" type="button" style="background-color: lightblue;" >Iced</button>
                         <button class="btn btn-primary font-weight-bold px-4 generate" type="submit" >Submit</button>
             </div>
             </div>
+            
             </form>
-            <div class="CoffeeName" style="color: white; font-size: 3rem; font-weight: bold;"></div>
-            <div class="CoffeeIngredients" style="color: white; font-size: 2rem "> </div>
+            <div id="listContainer" style=></div>
+            <div class="CoffeeName" style="color: white; font-size: 3rem; font-weight: bold; text-decoration: underline;"></div>
+            <div class="CoffeeIngredients" style="color: white; font-size: 2rem; font-weight: bold;"> </div>
             <div class="CoffeeDetails" style="color: white; font-size: 1.5rem"> </div>
             <div class="CoffeeImage" style="color: white; object-fit: contain;"> </div>
         </div>
